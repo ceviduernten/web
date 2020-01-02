@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cevi Dürnten | Chästlizettel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="chaestli.js"></script>
+    <style>
+        .chaestli-wrapper {
+            width: 100%;
+        }
+
+        #chaestli-error, #chaestli-nodata, #chaestli-result {
+            padding: 16px;
+            margin: 16px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+        }
+        #chaestli-result h6 {
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        #chaestli-result p {
+            margin-top: 8px;
+        }
+
+        #data-infos {
+            white-space: pre-wrap
+        }
+    </style>
+</head>
+<body>
+<div class="chaestli-wrapper">
+    <div id="chaestli-error" style="display: none">
+        Der Chästlizettel konnte aus technischen Gründen nicht geladen werden.
+    </div>
+    <div id="chaestli-result" style="display: none">
+        <div class="chaestli-date">
+            <h6>Datum und Zeit</h6>
+            <p id="data-time"></p>
+        </div>
+        <div class="location">
+            <h6>Treffpunkt</h6>
+            <p id="data-location"></p>
+        </div>
+        <div class="infos">
+            <h6>Infos</h6>
+            <p id="data-infos"></p>
+        </div>
+        <div class="about-group">
+
+        </div>
+    </div>
+    <div id="chaestli-nodata" style="display: none">
+        Kein aktueller Chästlizettel vorhanden für diese Gruppe.
+    </div>
+</div>
+</body>
+</html>
